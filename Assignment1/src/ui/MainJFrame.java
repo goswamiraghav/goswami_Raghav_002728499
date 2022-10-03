@@ -433,6 +433,10 @@ public class MainJFrame extends javax.swing.JFrame {
         else if(!(txtEmail.getText().matches("^(.+)@(\\S+)$"))){
             JOptionPane.showMessageDialog(this, "Email is not Valid");
         }
+        else if(!(txtCellPh.getText().matches("^\\d{10}$"))){
+                        JOptionPane.showMessageDialog(this, "Phone number is not 10 digits");
+
+        }
         else{
 
             ch.setName(Name);
@@ -544,6 +548,11 @@ public class MainJFrame extends javax.swing.JFrame {
         else if(!(txtEmail.getText().matches("^(.+)@(\\S+)$"))){
             JOptionPane.showMessageDialog(this, "Email is not Valid");
         }
+        else if(!(txtCellPh.getText().matches("^\\d{10}$"))){
+                        JOptionPane.showMessageDialog(this, "Phone number is not 10 digits");
+
+        }
+
         //        else if(!(txtLevel.getText().matches("[+-]?[0-9]+")))
         //        {
             //            JOptionPane.showMessageDialog(this, "Enter valid level");
